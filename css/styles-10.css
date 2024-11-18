@@ -1,0 +1,931 @@
+#login, #logout {
+    display: none;
+}
+body {
+    background-image: none;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: GothamBoldRegular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0 0 3px 0;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2 {
+    font-size: 20px;
+    margin-top: 18px;
+}
+h3 {
+    font-size: 17px; 
+}
+
+
+#header, #container, #footer {
+    width: 780px;
+    margin: 0 auto;
+    position: relative;
+}
+#container {
+    min-height: 180px;
+}
+#header {
+    height: 381px;
+}
+#admin #header {
+    height: 180px;
+}
+.tea-shop #header, .shop #header {
+    height: 30px;
+}
+#header-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pic-header {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    cursor: pointer;
+}
+
+#subscribe {
+    font-family: 'Vollkorn', Georgia, Arial, serif;
+    line-height: 24px;
+    position: absolute;
+    top: 3px;
+    font-size: 12px;
+}
+#subscribe-input {
+    margin-left: 2px;
+}
+
+#subForm_fr {
+    display: none;
+}
+body.i18n_fr #subForm {
+    display: none;
+}
+body.i18n_fr #subForm_fr {
+    display: block;
+}
+
+
+#social-fb-like {
+    position: absolute;
+    right: -95px;
+    top: 30px;
+}
+#social-twitter {
+    position: absolute;
+    right: -55px;
+    top: 54px;
+}
+#social-fb-find {
+    position: absolute;
+    top: -30px;
+}
+
+ul#nav {
+    font-family: GothamBoldRegular, Helvetica, Arial, sans-serif;
+    height: 30px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+#nav li {
+    float: right;
+    /*border-right:1px solid #DDD;*/
+}
+#nav li a {
+    padding: 10px 8px 10px 10px;
+    line-height: 30px;
+}
+#nav li a:link, #nav li a:visited {
+    color: #000;
+}
+#nav li a:hover {
+    color: #769c27;
+}
+
+#nav li .nav-tea-shop:link, #nav li .nav-tea-shop:visited,
+#nav li .nav-shop:link, #nav li .nav-shop:visited {
+    /*background:url(https://storage.googleapis.com/static.authentic-teas.com/img/nav-tea-shop.png) top center no-repeat;
+            	background-color:#769923;*/
+    position: relative;
+    top: 0px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/nav-active-bg2-trans.png) center -8px no-repeat;
+    color: #fff200!important;
+}
+#nav li .nav-tea-shop:hover, nav li .nav-shop:hover {
+    position: relative;
+    top: 2px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/nav-active-bg2-trans.png) center -8px no-repeat;
+}
+
+#handpicked, #badge {
+    position: absolute;
+    z-index: 101;
+    right: -45px;
+    top: 75px;
+    width: 185px;
+    height: 186px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.tea-shop #badge, .shop #badge {
+    display: none;
+}
+#badge a {
+    width: 185px;
+    height: 186px;
+    display: block;
+}
+#logo {
+    z-index: 25;
+    margin: 0;
+    width: 235px;
+    height: 144px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+#logo a:link, #logo a:visited {
+    text-indent: -99999em;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/Authentic-Teas-logo-trans.png) top left no-repeat;
+    width: 158px;
+    height: 158px;
+    display: block;
+}
+body.home #container {
+    min-height: 150px;
+    /* position: relative; */
+    z-index: 10;
+}
+body#blog #container {
+    min-height: 300px;
+}
+#home-header-tagline {
+    text-indent: -99999em;
+    width: 667px;
+    height: 79px;
+    display: block;
+    position: absolute;
+    top: 287px;
+    left: 72px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/authentic-people-authentic-teas-trans.png) top left no-repeat;
+}
+#home-header-tagline1 {
+    text-indent: -99999em;
+    width: 178px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    top: 265px;
+    left: 135px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/home-header-tagline1-pure.png) bottom left no-repeat;
+}
+#home-header-tagline2 {
+    text-indent: -99999em;
+    width: 324px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    top: 265px;
+    left: 315px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/home-header-tagline2-armenian.png) bottom left no-repeat;
+}
+body.i18n_fr #home-header-tagline2 {
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/home-header-tagline2-armenian_fr.png) bottom left no-repeat;
+}
+body.home #home-header-tagline1, body.home #home-header-tagline2 {
+    display: none;
+}
+
+
+#home-links {
+    width: 815px;
+    height: 175px;
+    display: block;
+    position: absolute;
+    top: -17px;
+    left: -36px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/home-links-trans.png) top left no-repeat;
+}
+body.i18n_fr #home-links {
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/home-links-trans2_fr.png) top left no-repeat;
+}
+#home-order {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+#home-order, #home-order a {
+    text-indent: -99999em;
+    width: 260px;
+    height: 165px;
+    display: block;
+}
+#home-armenian-teas {
+    position: absolute;
+    top: 25px;
+    left: 268px;
+}
+#home-armenian-teas, #home-armenian-teas a {
+    text-indent: -99999em;
+    width: 315px;
+    height: 132px;
+    display: block;
+}
+#home-tea-harvest {
+    position: absolute;
+    top: 25px;
+    left: 595px;
+}
+#home-tea-harvest, #home-tea-harvest a {
+    text-indent: -99999em;
+    width: 218px;
+    height: 132px;
+    display: block;
+}
+
+#content-text {
+    font-family: 'Vollkorn', Georgia, Arial, serif;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+    margin: 0;
+    left: 235px;
+    width: 546px;
+}
+body.home #content-text {
+    left: 0;
+    width: auto;
+    height: 140px;
+    margin: 0 auto;
+    z-index: 11;
+}
+body#blog #content-text {
+    margin: 0;
+    left: 235px;
+    width: 546px;
+    height: auto;
+    min-height: 300px;
+}
+#admin #content-text, #admin-text #content-text {
+    left: 0;
+}
+
+#content_fr {
+    display: none;
+}
+body.i18n_fr #content_en {
+    display: none;
+}
+body.i18n_fr #content_fr {
+    display: block;
+}
+
+
+#sidebar {
+    position: absolute;
+    float: left;
+    left: -235px;
+    top: 150px;
+    width: 218px;
+}
+#sidebar li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#comment {
+    width: 100%;
+}
+.pullquote {
+    float: left;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 31px;
+    position: absolute;
+    left: -237px;
+    top: 165px;
+    width: 224px;
+}
+
+.quotes {
+    position: relative;
+    clear: both;
+    padding: 15px 0px 13px 0;
+    width: 830px;
+    max-width: 100%;
+    left: -25px;
+    margin: 10px auto 5px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/line-trans.png) top center no-repeat;
+}
+.quote-item, .quote-item_fr {
+    display: none;
+}
+.quote-text {
+    font-family: 'Vollkorn', Georgia, Arial, serif;
+    font-size: 20px;
+    line-height: 1.25em;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+.quote-text p {
+    margin: 0 0 7px 0;
+}
+.quote-attribution {
+    font-family: 'Vollkorn', Georgia, Arial, serif;
+    font-size: 14px;
+    line-height: 1.1em;
+    color: #888;
+    text-align: center;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+
+
+
+.push {
+    display: none;
+}
+
+
+#footer {
+    height: 78px;
+    clear: both;
+}
+div#footer {
+    position: relative;
+    text-indent: -99999em;
+    display: block;
+    width: 830px;
+    left: -25px;
+    height: 78px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/footer-trans7.png) top left no-repeat;  
+}
+.holla {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 355px;
+    height: 78px;
+}
+.order-now {
+    position: absolute;
+    left: -275px;
+    top: -36px;
+}
+
+#armenian-tea-order-details {
+    /* background:url(https://storage.googleapis.com/static.authentic-teas.com/img/organic-tea-order-details-trans.png) top left no-repeat; */
+    position: absolute;
+    width: 140px;
+    text-align: center;
+    display: none;
+    top: 170px;
+    left: -170px;
+}
+
+#order-form {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+.more-info {
+    position: relative;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 11px;
+}
+.more-info-box {
+    display: none;
+    margin-top: 10px;
+    padding-left: 5px;
+    border-left: 1px solid #AAA;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 11px;
+    color: #202020;
+}
+.more-info-box p {
+    line-height: 11px;
+    margin-bottom: 12px;
+}
+div#products {
+    height: 100%;
+    position: absolute;
+    z-index: 15;
+    left: 267px;
+}
+.tea-shop-item, .shop-item {
+    display: none;
+}
+.tea-shop-item-active, .shop-item-active {
+    display: block;
+}
+.tea-shop-list-item-active, .shop-list-item-active {
+    background-image: url(https://storage.googleapis.com/static.authentic-teas.com/img/tea-shop-item-active.png);
+    background-repeat: no-repeat;
+    background-position: -10px bottom;
+}
+
+#tea-list, #shop-list {
+    padding: 0;
+    margin: 0;
+}
+#tea-list li, #shop-list li {
+    list-style-type: none;
+    margin: 1px 0;
+    padding: 1px 0;
+    text-indent: 0;
+    max-width: 260px;
+}
+
+
+.shop.title {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px dotted #BBB;
+}
+
+#tea-shop-address, #shop-address {
+    clear: both;
+    position: relative;
+    z-index: 17;
+}
+#tea-shop-address h3, #shop-address h3 {
+    margin: 10px 0;
+    color: #DD3A37;
+}
+#tea-shop-address td, #shop-address td {
+    padding: 1px 0;
+    line-height: 22px;
+}
+
+
+body.tea-shop #content-text, body.shop #content-text {
+    left: 195px;
+    min-height: 1350px;
+    width: 645px;
+}
+.tea-shop-item, .shop-item {
+    position: relative;
+    line-height: 14px;
+    width: 345px;
+    height: 325px;
+    overflow: visible;
+    float: left;
+    margin: 0 0px 20px -8px;
+    background-repeat: no-repeat;
+    background-position: -38px top;
+
+}
+.tea-shop-item {
+    background-image: url(https://storage.googleapis.com/static.authentic-teas.com/img/tea-packages2.jpg);
+}
+.tea-armenian-blend {
+    background-position: -38px top;
+}
+.tea-aroma-of-armenia {
+    background-position: -38px -975px;
+}
+.tea-mountain-melody {
+    background-position: -38px -1625px;
+}
+.tea-wild-mint {
+    background-position: -38px -325px;
+}
+.tea-orient-blend {
+    background-position: -38px -1300px;
+}
+.tea-ani-blend {
+    background-position: -38px -650px;
+}
+.tea-pomegranate-tea {
+    background-position: -38px -1950px;
+}
+.tea-highlands-sampler {
+    background-position: -38px -2275px;
+}
+
+
+.tea-shop-item h3, .shop-item h3 {
+    position: relative;
+    z-index: 16;
+    font-family: ZephyrRegular;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1em;
+    margin-left: 220px;
+    margin-bottom: 12px;
+    width: 155px;
+    display: block;
+    /*text-indent:-99999em;
+            	background-image: url(https://storage.googleapis.com/static.authentic-teas.com/img/tea-shop-titles.gif);
+            	background-repeat: no-repeat;
+            	background-position: left top;
+            	*/
+}
+
+/*
+.tea-armenian-blend h3 { background-position: left top; }
+.tea-aroma-of-armenia h3 { background-position: -155px top; }
+.tea-mountain-melody h3 { background-position: -310px top; }
+.tea-wild-mint h3 { background-position: -465px top; }
+.tea-orient-blend h3 { background-position: -620px top; }
+.tea-ani-blend h3 { background-position: -775px top; }
+.tea-pomegranate-tea h3 { background-position: -930px top; }
+.tea-highlands-sampler h3 { background-position: -1102px top; }
+*/
+
+.tea-shop-item div, .shop-item div {
+    position: relative;
+    z-index: 12;
+    margin-left: 220px;
+    margin-bottom: 10px;
+}
+.shop-item div.shop-product-image {
+    position: absolute;
+    z-index: 1;
+    width: 205px;
+    top: 0;
+    left: -20px;
+    margin: 0;
+}
+#products p {
+    margin: 0;
+    line-height: 1em;
+}
+.more-info-box p {
+    margin-bottom: 12px;
+}
+.tea-shop-ingredients, .shop-details {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 11px;
+    color: #666;
+}
+.tea-shop-price, .shop-price {
+    display: block;
+    margin: 4px 0;
+}
+.add-to-cart {
+    margin: 3px 0;
+}
+.organic, .organic-usda, .sticker {
+    background-repeat: no-repeat!important;
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    display: block;
+    top: -10px;
+    left: -5px;
+    text-indent: -99999em;
+}
+.organic {
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/organic-trans.png) top left no-repeat;
+}
+.organic-usda {
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/usda-organic-trans.png) top left no-repeat;
+}
+
+
+#tea-packaging {
+    position: relative;
+    left: -240px;
+}
+.shop-title {
+    margin-top: 3px;
+    color: #769C27;
+    display: block;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    
+    img {
+        max-width: 100%;
+        height: auto!important;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    #social-fb-like,
+    #social-twitter,
+    #handpicked, #badge,
+    #subscribe,
+    #home-header-tagline1,
+    #home-header-tagline2,
+    #footer {
+        display: none!important;
+    }
+    
+    #home-header-tagline-mobile {
+      position: absolute;
+      background: transparent url(https://storage.googleapis.com/static.authentic-teas.com/img/home-header-mobile-pure-armenian.png) no-repeat center center;
+      background-size: contain;
+      width: 94%;
+      left: 3%;
+      bottom: 4%;
+      z-index: 10;
+      top: 80%;
+    }
+    
+    #logo a:link, #logo a:visited {
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+    }
+    
+    .tea-harvest #logo {
+        display: none;
+    }
+    
+    #shop #logo {
+        left: 10px;
+        top: 5px;
+    }
+    
+    #shop #logo a:link, #shop #logo a:visited {
+      width: 40px;
+    }
+    
+    body.home #content-text {
+        height: auto;
+        margin: 0 10px;
+    }
+    
+    #content-text {
+        position: relative;
+        left: 0;
+        width: auto;
+        margin: 10px;
+    }
+    #content-text p {
+      width: auto!important;
+    }
+    
+    #content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #screen-flash {
+        width: 100%!important;
+        height: auto!important;
+    }
+    
+    #screen-flash video {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sidebar {
+        order: 5;
+    }
+    
+    .order-now {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+    
+    .order-now img {
+        margin: 0 auto;
+    }
+    
+    #header, #container, #footer {
+        width: 100%;
+    }
+    #header {
+        height: auto;
+    }
+    
+    #header-slideshow {
+        width: 100%;
+        position: relative;
+        padding-top: 50%;
+    }
+    .pic-header {
+        padding-top: 0%;
+        width: 100%!important;
+        max-width: 100%!important;
+        height: auto!important;
+        top: 30px;
+    }
+    ul#nav {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        height: 50px;
+    }
+    #nav li {
+    
+    }
+    #nav li a {
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 50px;
+        line-height: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: inline-block;
+    }
+    
+    #nav li .nav-tea-shop:link, 
+    #nav li .nav-tea-shop:visited, 
+    #nav li .nav-shop:link, 
+    #nav li .nav-shop:visited {
+        position: relative;
+        top: 0px;
+        background-image: none!important;
+        color: inherit!important;
+    }
+    
+    body#shop #nav li .nav-tea-shop:link,
+    body#shop #nav li .nav-tea-shop:visited {
+        color: #769c27!important;
+    }
+    
+    #home-links {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        background: none;
+    }
+    
+    #home-links > div {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    #home-links a {
+        background: orange;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    #home-order a {
+        background: transparent url(https://storage.googleapis.com/clients.adam8.com/www.authentic-teas.com/img/home-mobile-tout-1.jpg) no-repeat center center;
+        background-size: contain;
+        padding-top: 72%;
+    }
+    
+    #home-armenian-teas a {
+        background: transparent url(https://storage.googleapis.com/clients.adam8.com/www.authentic-teas.com/img/home-mobile-tout-2.jpg) no-repeat center center;
+        background-size: contain;
+        padding-top: 45%;
+    }
+    
+    #home-tea-harvest a {
+        background: transparent url(https://storage.googleapis.com/clients.adam8.com/www.authentic-teas.com/img/home-mobile-tout-3.jpg) no-repeat center center;
+        background-size: contain;
+        padding-top: 58%;
+    }
+    
+    .quotes {
+        /* background-color: pink; */
+        padding: 15px;
+        left: 0;
+        margin: 0 auto;
+        background: none;
+        width: auto;
+    }
+
+    #armenian-tea-order-details {
+        position: relative;
+        width: auto;
+        top: 0;
+        left: 0;
+        order: 6;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    body.tea-shop #content-text, body.shop #content-text {
+        left: 0;
+        min-height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#products {
+        display: none;
+    }
+
+    #tea-list li, #shop-list li {
+        max-width: inherit;
+        height: 35px;
+        line-height: 35px;
+    }
+    #tea-shop-address td, #shop-address td {
+        line-height: 30px;
+        font-size: 15px;
+        width: auto!important;
+    }
+    #tea-shop-address input, #shop-address input {
+        font-size: 15px;
+    }
+    #shop-address table {
+        width: 100%!important;
+    }
+
+    #shop-address table td input {
+        width: 100%;
+    } 
+    
+    #shop-list .shop-item {
+      display: block!important;
+      margin-top: 30px;
+      width: 100%;
+      height: auto; 
+    }
+    
+    #shop-list .more-info {
+      display: none; 
+    }
+    
+    .tea-shop-item h3, .shop-item h3,
+    .tea-shop-item div, .shop-item div {
+      margin-left: 170px; 
+    }
+    
+    #tea-list li, #shop-list li {
+      clear: both;
+    }
+    
+    #tea-packaging {
+      position: relative;
+      left: 0;
+    }
+    #tea-packaging img {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    ul#nav {
+        padding:0;
+        margin: 0;
+        font-size: 11px;
+    }
+    #nav li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #shop .nav-tea-shop {
+      display: none;
+    }
+
+}
+
+a:link,
+.black-on-white a:link,
+a:visited,
+.black-on-white a:visited {
+  color: #769c27;
+}
+a:hover,
+.black-on-white a:hover {
+  color: #769c27;
+}
+#nav .nav-home:link,
+#nav .nav-home:visited {
+  color: #769c27;
+}
