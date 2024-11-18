@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html><!-- TODO lang attribute -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,24 +19,7 @@
     </script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://commondatastorage.googleapis.com/static.adam8.com/js/modernizr-1.7.min.js"></script>
-    <script type="text/javascript" src="https://storage.googleapis.com/static.authentic-teas.com/js/header10.js"></script>
-
-    <script type="text/javascript">
-    /*
-        WebFontConfig = {
-            google: { families: [ 'Vollkorn:regular,italic,bold,bolditalic' ] }
-        };
-        (function() {
-            var wf = document.createElement('script');
-            wf.src = 'https//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
-    */
-    </script>
+    <script type="text/javascript" src="/js/header-10.js"></script>
   </head>
 
   <body class="home">
@@ -232,34 +215,6 @@
         <div id="footer-container"></div>
       </div>
     </div>
-
-    <script type="text/javascript" src="https://commondatastorage.googleapis.com/static.adam8.com/js/scripts2.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        var randQuote = Math.floor(Math.random() * $(".quote-item").length);
-        $(".quote-item:eq(" + randQuote + ")").fadeIn();
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".slideshow-photo-link a").click(function (e) {
-          e.preventDefault();
-          return false;
-        });
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        var m = "art";
-        m += "o@d";
-        m += "irect.ca";
-        $('<a class="holla" href="mailto:' + m + '"></a>').appendTo(
-          "#footer-container"
-        );
-      });
-    </script>
+    <script type="/js/scripts-2.js"></script>
   </body>
 </html>
