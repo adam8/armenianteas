@@ -157,8 +157,9 @@ ul#nav {
 }
 #logo a:link, #logo a:visited {
     text-indent: -99999em;
-    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/Authentic-Teas-logo-trans.png) top left no-repeat;
-    width: 158px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas.png) top left no-repeat;
+    background-size: contain;
+    width: 275px;
     height: 158px;
     display: block;
 }
@@ -178,7 +179,7 @@ body#blog #container {
     position: absolute;
     top: 287px;
     left: 72px;
-    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/authentic-people-authentic-teas-trans.png) top left no-repeat;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas.png) top left no-repeat;
 }
 #home-header-tagline1 {
     text-indent: -99999em;
