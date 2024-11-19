@@ -1024,38 +1024,6 @@
 
     <script type="/js/scripts-2.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        var randQuote = Math.floor(Math.random() * $(".quote-item").length);
-        $(".quote-item:eq(" + randQuote + ")").fadeIn();
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".slideshow-photo-link a").click(function (e) {
-          e.preventDefault();
-          return false;
-        });
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        var m = "art";
-        m += "o@d";
-        m += "irect.ca";
-        $('<a class="holla" href="mailto:' + m + '"></a>').appendTo(
-          "#footer-container"
-        );
-      });
-    </script>
-
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"
-    ></script>
-
     <script>
       $.fn.focusWithoutScrolling = function () {
         var x = window.scrollX,
@@ -1094,7 +1062,6 @@
         $(this).css("cursor", "default");
         var itemNum = $("#shop-list li").index(this);
         $(".shop-item").eq(itemNum).addClass("shop-item-active");
-        //$('.shop-item-active').css("background-image","url('" + $(this).attr('id') + "=s375')");
       });
 
       $(".more-info a").click(function () {
@@ -1102,6 +1069,8 @@
       });
 
       $("#paypal-submit").click(function (e) {
+        console.log('paypal-submit click');
+
         e.preventDefault();
         var grand_total = 0;
         var i = 0;
@@ -1223,22 +1192,16 @@
               }
 
               $("#order-form").append(
-                '<input id="item_name_' +
-                  i +
-                  '" name="item_name_' +
-                  i +
+                '<input id="item_name_' + i +
+                  '" name="item_name_' + i +
                   '" type="hidden" value="' +
                   product_name +
-                  '" /><input id="amount_' +
-                  i +
-                  '" name="amount_' +
-                  i +
+                  '" /><input id="amount_' + i +
+                  '" name="amount_' + i +
                   '" type="hidden" value="' +
                   product_price +
-                  '" /><input id="item_key_name_' +
-                  i +
-                  '" name="item_key_name_' +
-                  i +
+                  '" /><input id="item_key_name_' + i +
+                  '" name="item_key_name_' + i +
                   '" type="hidden" value="' +
                   product_key_name +
                   '" />'
@@ -1274,7 +1237,6 @@
               '" />'
           );
 
-          // console.log('submitting coupon code: ' + coupon_rebate + ' now...');
           console.log("grand_total", grand_total);
           console.log("cart", cart);
           if (cart) {

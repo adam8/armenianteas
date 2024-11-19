@@ -40,14 +40,6 @@ $(function () {
     $(this).parent().addClass("admin-hover-li");
     $(this).siblings(".admin-options").show();
   });
-  
-  var randQuote = Math.floor(Math.random() * $(".quote-item").length);
-  $(".quote-item:eq(" + randQuote + ")").fadeIn();
-
-  $(".slideshow-photo-link a").click(function (e) {
-    e.preventDefault();
-    return false;
-  });
 });
 
 var m = "art";
