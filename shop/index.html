@@ -4,24 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://commondatastorage.googleapis.com/static.adam8.com/clients/www.authentic-teas.com/favicon.ico"
-      rel="shortcut icon"
-    />
+    <link href="https://commondatastorage.googleapis.com/static.adam8.com/clients/www.authentic-teas.com/favicon.ico" rel="shortcut icon" />
 
     <link href="/css/styles-basic-46.css" rel="stylesheet" type="text/css" />
     <link href="/css/styles-10.css" rel="stylesheet" type="text/css" />
 
-    <link
-      href="https://storage.googleapis.com/static.authentic-teas.com/css/gotham-bold.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://storage.googleapis.com/static.adam8.com/fonts/css/twilight-webfont.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://storage.googleapis.com/static.authentic-teas.com/css/gotham-bold.css" rel="stylesheet" type="text/css" />
+    <link href="https://storage.googleapis.com/static.adam8.com/fonts/css/twilight-webfont.css" rel="stylesheet" type="text/css" />
 
     <title>Herbal teas from Armenia</title>
 
@@ -41,7 +30,7 @@
       <div id="header">
         <!-- begin HEADER -->
 
-        <h1 id="logo" class="header-content"><a href="/">Authentic Teas</a></h1>
+        <h1 id="logo" class="header-content"><a href="/">Armenian Teas</a></h1>
 
         <div id="subscribe">
           <form
@@ -585,12 +574,12 @@
             <input
               name="return"
               type="hidden"
-              value="http://www.authentic-teas.com/thanks/"
+              value="http://www.armenianteas.com/thanks/"
             />
             <input
               name="cancel_return"
               type="hidden"
-              value="http://www.authentic-teas.com"
+              value="http://www.armenianteas.com"
             />
 
             <input name="shipping" type="hidden" value="8.95" />
@@ -1003,7 +992,7 @@
                 </tbody>
               </table>
 
-              <div>
+              <!-- <div>
                 <h3>Coupon Code</h3>
                 <input
                   id="coupon-code"
@@ -1011,7 +1000,7 @@
                   type="text"
                   value=""
                 />
-              </div>
+              </div> -->
 
               <input
                 border="0"
@@ -1295,18 +1284,18 @@
 
         // is there a valid coupon code?
 
-        var coupon_code_val = $.trim($("#coupon-code").val());
-        $.post("https://www.authentic-teas.com/coupon-code-validator/", {
-          coupon_code: coupon_code_val,
-        }).done(function (data) {
-          if ((isNaN(data) || data == 1) && coupon_code_val != "") {
-            alert("Sorry, coupon code not valid.");
-            coupon_rebate = 1;
-          } else {
-            coupon_rebate = data;
-            quantify();
-          }
-        });
+        // var coupon_code_val = $.trim($("#coupon-code").val());
+        // $.post("https://www.armenianteas.com/coupon-code-validator/", {
+        //   coupon_code: coupon_code_val,
+        // }).done(function (data) {
+        //   if ((isNaN(data) || data == 1) && coupon_code_val != "") {
+        //     alert("Sorry, coupon code not valid.");
+        //     coupon_rebate = 1;
+        //   } else {
+        //     coupon_rebate = data;
+        //     quantify();
+        //   }
+        // });
       });
 
       $(function () {

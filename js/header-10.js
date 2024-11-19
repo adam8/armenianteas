@@ -125,16 +125,12 @@ $(document).ready(function() {
      if ($('body.i18n_fr').length>0) {
              $('#nav').append($('<li class="nav1 nav-tier1"><a href="/shop/" class="nav-tea-shop nav-link-tier1">La boutique</a></li>')); 
      } else { 
-             //$('#nav li:first').after($('<li class="nav1"><a class="nav-blog" href="http://blog.authentic-teas.com/">Blog</a></li>'));
              $('#nav').append($('<li class="nav1 nav-tier1"><a href="/shop/" class="nav-tea-shop nav-link-tier1">Tea Shop</a></li>'));  
      }
     
     $(window).bind('load', function() {
                                     
                                     
-        /*
-        $('#header').append('<div id="social-fb-like"><div id="social-fb-find"><a href="https://www.facebook.com/AuthenticTeas/"><img src="https://storage.googleapis.com/clients.adam8.com/www.authentic-teas.com/img/find-us-on-facebook.gif" width="81" height="29" alt="find us on facebook" /></a></div><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.authentic-teas.com/our-teas/&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95px; height:24px;" allowTransparency="true"></iframe></div><div id="social-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-count="none"> </a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script></div>');
-        */
                                     
                                     
         function preload(arrayOfImages) {
