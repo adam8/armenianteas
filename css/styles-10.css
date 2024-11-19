@@ -338,6 +338,7 @@ body.i18n_fr #content_fr {
     font-style: italic;
     color: #888;
     text-align: center;
+    text-wrap: balance;
 }
 .quote-text p {
     margin: 0 0 7px 0;
