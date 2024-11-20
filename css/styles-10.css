@@ -157,11 +157,15 @@ ul#nav {
 }
 #logo a:link, #logo a:visited {
     text-indent: -99999em;
-    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas.png) top left no-repeat;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas-logo.png) top left no-repeat;
     background-size: contain;
     width: 275px;
     height: 158px;
     display: block;
+}
+#shop #logo a:link, 
+#shop #logo a:visited {
+    width: 158px;
 }
 body.home #container {
     min-height: 150px;
@@ -179,7 +183,7 @@ body#blog #container {
     position: absolute;
     top: 287px;
     left: 72px;
-    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas.png) top left no-repeat;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas-logo.png) top left no-repeat;
 }
 #home-header-tagline1 {
     text-indent: -99999em;
@@ -666,6 +670,7 @@ body.tea-shop #content-text, body.shop #content-text {
     #shop #logo {
         left: 10px;
         top: 5px;
+
     }
     
     #shop #logo a:link, #shop #logo a:visited {
