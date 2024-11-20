@@ -163,6 +163,7 @@ ul#nav {
     height: 158px;
     display: block;
 }
+#shop #logo,
 #shop #logo a:link, 
 #shop #logo a:visited {
     width: 158px;
@@ -434,7 +435,6 @@ div#footer {
 div#products {
     height: 100%;
     position: absolute;
-    z-index: 15;
     left: 267px;
 }
 .tea-shop-item, .shop-item {
