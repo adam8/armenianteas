@@ -26,23 +26,38 @@
     <div id="page-container">
       <div id="header">
         <h1 id="logo" class="header-content"><a href="/">Armenian Teas</a></h1>
-
         <div id="subscribe">
           <form
-            action="https://arto.createsend.com/t/r/s/xdkjjj/"
+            class="js-cm-form"
+            id="subForm"
+            action="https://www.createsend.com/t/subscribeerror?description="
             method="post"
-            id="subForm">
-            For Special Offers
-            <span id="subscribe-input">
+            data-id="191722FC90141D02184CB1B62AB3DC2680F50CE09754EB46FB6C04046C7B5ACCAD76F2BCF111430F31341FF180F7B8E9FB611DCE260FEF02381B10770B37BFB3">
+            <!-- <div>
+              <label>Name </label
+              ><input
+                aria-label="Name"
+                id="fieldName"
+                maxlength="200"
+                name="cm-name"
+              />
+            </div> -->
+            <label>For Special Offers &nbsp;</label>
+            <div class="subscribe-input">
               <input
-                type="text"
+                autocomplete="Email"
+                aria-label="Email"
+                class="js-cm-email-input qa-input-email"
+                id="fieldEmail"
+                maxlength="200"
+                name="cm-tylykui-tylykui"
+                required=""
+                type="email"
                 value="Enter your email"
-                name="cm-xdkjjj-xdkjjj"
-                id="xdkjjj-xdkjjj"
                 onfocus="if(this.value=='Enter your email')this.value='';"
                 onblur="if(this.value=='')this.value='Enter your email';" />
-              <input type="submit" value="Subscribe" />
-            </span>
+              <button type="submit">Subscribe</button>
+            </div>
           </form>
         </div>
 
@@ -129,8 +144,7 @@
                 We drink this every night - it&#39;s such a delight after
                 dinner. It&#39;s &quot;real Armenian mint tea&quot; unlike the
                 ones that refer to themselves as such but aren&#39;t really from
-                Armenia nor as good as this tea.&rdquo
-              </p>
+                Armenia nor as good as this tea.</p>
             </div>
             <div class="quote-attribution">Tamar P.</div>
           </div>
@@ -212,9 +226,18 @@
       </div>
 
       <div id="footer">
-        <div id="footer-container"></div>
+        <div id="footer-container">
+          <div class="footer-address">
+            <div class="footer-title">Armenian Teas, Inc</div>
+            <div>Vancouver, BC &nbsp;Canada</div>
+            <div>Phone: 604-839-2108</div>
+            <div>Email: <a href="mailto:info@armenianteas.com">info@armenianteas.com</a></div>
+          </div>
+          <div class="footer-certificate"></div>
+        </div>
       </div>
     </div>
     <script type="/js/scripts-2.js"></script>
+    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
   </body>
 </html>

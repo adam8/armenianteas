@@ -64,7 +64,11 @@ h3 {
     margin-left: 2px;
 }
 
-#subForm_fr {
+#subForm {
+    display: flex;
+}
+
+/* #subForm_fr {
     display: none;
 }
 body.i18n_fr #subForm {
@@ -72,7 +76,7 @@ body.i18n_fr #subForm {
 }
 body.i18n_fr #subForm_fr {
     display: block;
-}
+} */
 
 
 #social-fb-like {
@@ -167,6 +171,11 @@ ul#nav {
 #shop #logo a:link, 
 #shop #logo a:visited {
     width: 158px;
+}
+body.tea-harvest #logo,
+body.tea-harvest #logo a:link,
+body.tea-harvest #logo a:visited {
+    width: 190px
 }
 body.home #container {
     min-height: 150px;
@@ -371,10 +380,10 @@ body.i18n_fr #content_fr {
 
 
 #footer {
-    height: 78px;
+    /* height: 78px; */
     clear: both;
 }
-div#footer {
+/* div#footer {
     position: relative;
     text-indent: -99999em;
     display: block;
@@ -382,6 +391,25 @@ div#footer {
     left: -25px;
     height: 78px;
     background: url(https://storage.googleapis.com/static.authentic-teas.com/img/footer-trans7.png) top left no-repeat;  
+} */
+#footer-container {
+    display: flex;
+    justify-content: space-between
+}
+.footer-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.footer-address {
+    font-size: 11px;
+}
+.footer-certificate {
+    width: 100px;
+    height: 75px;
+    background: url(https://storage.googleapis.com/static.authentic-teas.com/img/footer-trans7.png) bottom right no-repeat;
+    position: absolute;
+    right: -40px;
 }
 .holla {
     position: absolute;
