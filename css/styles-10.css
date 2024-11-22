@@ -674,11 +674,11 @@ body.tea-shop #content-text, body.shop #content-text {
     
     #home-header-tagline-mobile {
       position: absolute;
-      background: transparent url(https://storage.googleapis.com/static.authentic-teas.com/img/home-header-mobile-pure-armenian.png) no-repeat center center;
+      background: transparent url(https://storage.googleapis.com/static.authentic-teas.com/img/armenian-teas-mobile.png) no-repeat center center;
       background-size: contain;
-      width: 94%;
-      left: 3%;
-      bottom: 4%;
+      width: 100%;
+      left: 0;
+      bottom: 0;
       z-index: 10;
       top: 65%;
     }

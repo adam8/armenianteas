@@ -157,10 +157,17 @@ $(document).ready(function() {
     });
     
   
-      $('.pic-header').click(
-      function() {
-          window.location = "https://www.authentic-teas.com/shop/";
-      });
+  $('.pic-header').click(
+    function() {
+        window.location = "/shop/";
+    }
+  );
+
+  $('#home-header-tagline-mobile').click(
+    function() {
+      window.location = "/"
+    }
+  )
       
       
       
