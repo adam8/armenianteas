@@ -684,9 +684,9 @@ body.tea-shop #content-text, body.shop #content-text {
     }
     
     #logo a:link, #logo a:visited {
-        /* /* width: 100px; */
+        /* width: 100px; */
         height: 100px;
-        background-size: contain; */
+        background-size: contain;
     }
     
     .tea-harvest #logo {
@@ -696,7 +696,6 @@ body.tea-shop #content-text, body.shop #content-text {
     #shop #logo {
         left: 10px;
         top: 5px;
-
     }
     
     #logo {display: none;}
@@ -767,9 +766,13 @@ body.tea-shop #content-text, body.shop #content-text {
         width: 100%!important;
         max-width: 100%!important;
         height: auto!important;
-        /* top: 30px; */
         top: 0;
     }
+
+    body.thanks .pic-header {
+        position: relative;
+    }
+
     ul#nav {
         padding: 0;
         margin: 0;
