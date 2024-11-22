@@ -488,8 +488,6 @@ div#products {
     text-indent: 0;
     max-width: 260px;
 }
-
-
 .shop.title {
     margin-top: 5px;
     padding-top: 5px;
@@ -595,8 +593,8 @@ body.tea-shop #content-text, body.shop #content-text {
 .shop-item div.shop-product-image {
     position: absolute;
     z-index: 1;
-    width: 205px;
-    top: 0;
+    width: 175px;
+    top: -20px;
     left: -20px;
     margin: 0;
 }
