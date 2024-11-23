@@ -1,3 +1,3 @@
 export function header(name) {
-    return `<html><body>`;
+    return `<html lang="en"><body>`;
 }
